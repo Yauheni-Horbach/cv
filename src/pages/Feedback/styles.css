@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+  width: auto;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+
+  position: relative;
+}
+
+.Header {
+  width: 100vw;
+  height: 20vh;
+  background-color: #4ddf56;
+  position: fixed;
+  top: 0;
+}
+
+.Section {
+  width: 98vw;
+  height: 100vh;
+}
+
+.TopSection {
+  background-color: #282c34;
+  color: white;
+}
+
+.BottomSection {
+  background-color: #61dafb;
+  color: black;
+}
+
+.MiddleSection {
+  background-color: #b7a72c;
+  color: white;
+}

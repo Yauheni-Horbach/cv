@@ -1,0 +1,55 @@
+.Wrapper {
+  width: 100vw;
+  height: 20vh;
+  position: fixed;
+  z-index: 20;
+}
+
+.Body {
+  background-color: #4ddf56;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.NamePage {
+  width: 19vh;
+  height: 19vh;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.Control {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Face {
+  width: 19vh;
+  height: 19vh;
+  display: "flex";
+  align-items: "center";
+  border: red 2px solid;
+  border-radius: 100px;
+  z-index: 10;
+  transform: translate(0, 0);
+  transition: all 2s;
+  zoom: 100%;
+}
+
+.Face {
+  transition: all 1s;
+}
+
+.Face.Animated {
+  transform: translate(0, 40vh) scale(3);
+}
+
+.FaceModel {
+  width: 19vh;
+  height: 19vh;
+}

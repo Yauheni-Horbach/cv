@@ -1,0 +1,29 @@
+.Layer {
+  padding-top: 20vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 80vh;
+}
+
+.Bottom-layer {
+  background-color: rgb(151, 127, 127);
+  opacity: 1;
+}
+
+.Top-layer {
+  background-color: rgb(103, 103, 172);
+}
+
+.Window {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 5;
+  pointer-events: none;
+}
