@@ -10,7 +10,7 @@ export const DescriptionSection = () => {
   };
 
   return (
-    <Section onMouseMove={handleMouseMove}>
+    <Section onMouseMove={handleMouseMove} id="description">
       <div className="Layer Bottom-layer">
         {mousePosition.x} {mousePosition.y}
         <div
