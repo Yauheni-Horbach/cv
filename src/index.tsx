@@ -3,6 +3,7 @@ import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import WebFont from "webfontloader";
 
+import { LoadingOverlay } from "./components/Loader";
 import { Feedback } from "./pages/Feedback";
 import { Main } from "./pages/Main";
 import { Portfolio } from "./pages/Portfolio";
@@ -40,7 +41,9 @@ const Root = () => {
 
   return (
     <React.StrictMode>
-      <RouterProvider router={router} />
+      <LoadingOverlay>
+        <RouterProvider router={router} />
+      </LoadingOverlay>
     </React.StrictMode>
   );
 };

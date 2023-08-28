@@ -9,7 +9,7 @@ export const Header = () => {
   return (
     <div className="wrapper">
       <div className="body">
-        <div className="namePage">
+        <div className="name-page">
           <p>{pageName}</p>
         </div>
         <div className="control">

@@ -1,5 +1,3 @@
-import { Navigate } from "react-router-dom";
-
 import "./styles.css";
 
 interface MenuProps {
@@ -21,30 +19,19 @@ export const Menu = ({
       >
         <div className={`toggle ${isMenuOpen ? "close" : ""}`}></div>
       </div>
-      <span
-        className={isMenuOpen ? "" : "hidden"}
-        onClick={() => navigateTo("/")}
-      >
-        <p>Main</p>
-      </span>
-      <span
-        className={isMenuOpen ? "" : "hidden"}
-        onClick={() => navigateTo("/portfolio")}
-      >
-        <p>Portfolio</p>
-      </span>
-      <span
-        className={isMenuOpen ? "" : "hidden"}
-        onClick={() => navigateTo("/feedback")}
-      >
-        <p>FeedBack</p>
-      </span>
-      <span
-        className={isMenuOpen ? "" : "hidden"}
-        onClick={() => navigateTo("/skills")}
-      >
-        <p>Skills</p>
-      </span>
+      {["/", "/portfolio", "/feedback", "/skills"].map((path, index) => (
+        <span
+          key={index}
+          className={isMenuOpen ? "" : "hidden"}
+          onClick={() => navigateTo(path)}
+        >
+          <p>
+            {path === "/"
+              ? "Main"
+              : path.slice(1).charAt(0).toUpperCase() + path.slice(2)}
+          </p>
+        </span>
+      ))}
     </div>
   );
 };

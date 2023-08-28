@@ -1,13 +1,14 @@
 import { Header } from "../../components/Header";
+import { PageWrapper } from "../../components/PageWrapper";
 
 import { DescriptionSection, TitleSection } from "./components";
 
 export const Main = () => {
   return (
-    <div>
+    <PageWrapper>
       <Header />
       <TitleSection />
       <DescriptionSection />
-    </div>
+    </PageWrapper>
   );
 };
