@@ -1,4 +1,4 @@
-.Layer {
+.layer {
   padding-top: 20vh;
   top: 0;
   left: 0;
@@ -6,7 +6,7 @@
   height: 80vh;
 }
 
-.Face {
+.face {
   width: 50vh;
   height: 50vh;
   display: "flex";

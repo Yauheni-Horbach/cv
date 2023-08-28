@@ -1,17 +1,18 @@
 import { Menu } from "./components";
 import { useHeader } from "./useHeader";
+
 import "./styles.css";
 
 export const Header = () => {
   const { onPressMenuButton, isMenuOpen, navigateTo, pageName } = useHeader();
 
   return (
-    <div className="Wrapper">
-      <div className="Body">
-        <div className="NamePage">
+    <div className="wrapper">
+      <div className="body">
+        <div className="namePage">
           <p>{pageName}</p>
         </div>
-        <div className="Control">
+        <div className="control">
           <Menu
             onPressMenuButton={onPressMenuButton}
             isMenuOpen={isMenuOpen}

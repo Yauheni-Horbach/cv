@@ -1,4 +1,4 @@
-.App {
+.app {
   text-align: center;
   width: auto;
   height: auto;
@@ -13,30 +13,22 @@
   position: relative;
 }
 
-.Header {
-  width: 100vw;
-  height: 20vh;
-  background-color: #4ddf56;
-  position: fixed;
-  top: 0;
-}
-
-.Section {
+.section {
   width: 98vw;
   height: 100vh;
 }
 
-.TopSection {
+.section_top {
   background-color: #282c34;
   color: white;
 }
 
-.BottomSection {
+.section_bottom {
   background-color: #61dafb;
   color: black;
 }
 
-.MiddleSection {
+.section_middle {
   background-color: #b7a72c;
   color: white;
 }

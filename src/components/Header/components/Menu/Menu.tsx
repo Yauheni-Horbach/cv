@@ -1,5 +1,6 @@
-import "./styles.css";
 import { Navigate } from "react-router-dom";
+
+import "./styles.css";
 
 interface MenuProps {
   isMenuOpen: boolean;

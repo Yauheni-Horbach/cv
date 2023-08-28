@@ -1,13 +1,14 @@
-import "./styles.css";
 import { Header } from "../../components/Header";
+
+import "./styles.css";
 
 export const Portfolio = () => {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
-      <div className="Section TopSection"></div>
-      <div className="Section MiddleSection"></div>
-      <div className="Section BottomSection"></div>
+      <div className="section section_top"></div>
+      <div className="section section_middle"></div>
+      <div className="section section_bottom"></div>
     </div>
   );
 };

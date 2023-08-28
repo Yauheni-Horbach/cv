@@ -1,4 +1,4 @@
-.Layer {
+.layer {
   padding-top: 20vh;
   position: absolute;
   top: 0;
@@ -7,16 +7,16 @@
   height: 80vh;
 }
 
-.Bottom-layer {
+.layer_bottom {
   background-color: rgb(151, 127, 127);
   opacity: 1;
 }
 
-.Top-layer {
+.layer_top {
   background-color: rgb(103, 103, 172);
 }
 
-.Window {
+.window {
   position: absolute;
   width: 200px;
   height: 200px;

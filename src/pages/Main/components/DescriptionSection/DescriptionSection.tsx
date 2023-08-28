@@ -1,6 +1,8 @@
-import "./styles.css";
 import React from "react";
+
 import { Section } from "../../../../components/Section";
+
+import "./styles.css";
 
 export const DescriptionSection = () => {
   const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
@@ -11,15 +13,15 @@ export const DescriptionSection = () => {
 
   return (
     <Section onMouseMove={handleMouseMove} id="description">
-      <div className="Layer Bottom-layer">
+      <div className="layer layer_bottom">
         {mousePosition.x} {mousePosition.y}
         <div
-          className="Window"
+          className="window"
           style={{ top: mousePosition.y, left: mousePosition.x }}
         ></div>
       </div>
       <div
-        className="Layer Top-layer"
+        className="layer layer_top"
         style={{
           clipPath: `circle(100px at ${mousePosition.x}px ${mousePosition.y}px)`,
         }}

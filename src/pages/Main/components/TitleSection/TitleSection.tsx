@@ -1,22 +1,18 @@
-import "./styles.css";
-import React from "react";
-import { Section } from "../../../../components/Section";
 import { HashLink as Link } from "react-router-hash-link";
-import { Model } from "../../../../ui/3d/lion/Scene";
-import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+
+import { ScrollIcon } from "../../../../components/ScrollIcon";
+import { Section } from "../../../../components/Section";
+import { Model } from "../../../../ui/3d/lion/Scene";
+
+import "./styles.css";
 
 export const TitleSection = () => {
-  const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
-
-  const handleMouseMove = (e: { clientX: number; clientY: number }) => {
-    setMousePosition({ x: e.clientX, y: e.clientY });
-  };
-
   return (
-    <Section onMouseMove={handleMouseMove} id="title">
-      <div className="Layer">
-        <div className="Face">
+    <Section id="title">
+      <div className="layer">
+        <div className="face">
           <Canvas style={{ borderRadius: "100%" }}>
             <ambientLight intensity={15} />
             <OrbitControls enableZoom={true} />
@@ -30,6 +26,7 @@ export const TitleSection = () => {
           </Canvas>
         </div>
         <Link to="/#description">Skills</Link>
+        <ScrollIcon />
       </div>
     </Section>
   );

@@ -1,5 +1,4 @@
 import "./styles.css";
-import React from "react";
 
 interface SectionProps {
   children: React.ReactNode;
@@ -9,7 +8,7 @@ interface SectionProps {
 
 export const Section = ({ children, onMouseMove, id }: SectionProps) => {
   return (
-    <div className="Section" onMouseMove={onMouseMove} id={id}>
+    <div className="section" onMouseMove={onMouseMove} id={id}>
       {children}
     </div>
   );
